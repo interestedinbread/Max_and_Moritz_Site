@@ -11,22 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <header class="bg-white shadow-md py-4 flex">
+    <header class="bg-white shadow-md py-4 flex sticky top-0 z-50 cursor-pointer items-center">
         <h4 class="caveat-brush-regular text-6xl text-red-600 pl-4">Max & Moritz</h4>
         <img src="img/max_and_moritz_cartoon.png" class="h-[60px] w-auto object-contain ml-3">
     </header>
 
     <main class="w-full">
-        <div class="w-full h-[500px] overflow-hidden">
-            <img src="img/food_truck_left_angle.jpg" alt="Food Truck" class="w-full h-[750px] object-cover -mt-[150px]">
+        <div class="parallax-container overflow-hidden">
+            <div class="parallax-image">
+                <img src="img/food_truck_left_angle.jpg" alt="Food Truck" class="w-full h-[750px] object-cover -mt-[150px]">
+            </div>
         </div>
-        <div class="bg-red-600 border-t-4 border-b-4 border-amber-300">
+        <div class="bg-red-600 border-t-4 border-b-4 border-amber-300 -mt-32 relative z-10">
             <h4 class="text-white pl-6 pt-4 text-5xl caveat-brush-regular">About Us</h4>
             <p class="text-white p-6 text-lg poppins-regular leading-relaxed">Located at Sturdies Bay Galiano Island, Max and Moritz has been serving Indonesian and German style food to island locals and hungry visitors since 1994! 
                 All of our meals are cooked fresh to order with the best ingredients, including many that are sourced right here on Galiano. 
             </p>
         </div>
-        <div class="menu-container">
+        <div class="menu-container mb-12">
             <div class="Indonesian-menu">
                 <h4 class="text-red-600 pt-2 text-5xl caveat-brush-regular text-center">Indonesian Food</h4>
                 <hr class="border-red-600 w-3/4 mx-auto border-2">
@@ -192,6 +194,35 @@
                 </div>
             </div>
            
+        </div>
+
+        <!-- Add something here about more meal information and encourage people to pick up some Lucy sauce -->
+        <div class="parallax-container-2 h-[750px] overflow-hidden relative">
+            <div class="parallax-image-2 absolute w-full h-[750px]">
+                <img src="img/shop_painting.jpg" alt="painting" class="w-full h-[750px] object-cover object-right">
+            </div>
+        </div>
+
+
+        <div class="pics-container w-full overflow-hidden">
+            <div class="pic-container h-[400px] w-[120%] -ml-[20%] my-2">
+                <img src="img/food_3.jpg" alt="bratwurst" class="w-full h-full object-cover object-left">
+            </div>
+            <div class="pic-container h-[400px] w-[120%] -mr-[20%] my-2">
+                <img src="img/food_truck_right_angle.jpg" alt="food truck" class="w-full h-full object-cover object-right">
+            </div>
+            <div class="pic-container h-[400px] w-[120%] -mr-[20%] my-2">
+                <img src="img/lucy_sauce.jpg" alt="Lucy sauce" class="w-full h-full object-cover object-right">
+            </div>
+            <div class="pic-container h-[400px] w-[120%] -mr-[20%] my-2">
+                <img src="img/bami_goreng.jpg" alt="Bami Goreng" class="w-full h-full object-cover object-right">
+            </div>
+            <div class="pic-container h-[400px] w-[120%] -mr-[20%] my-2">
+                <img src="img/max_and_mo_figures.jpg" alt="figures" class="w-full h-full object-cover object-right">
+            </div>
+            <div class="pic-container h-[400px] w-[120%] -mr-[20%] my-2">
+                <img src="img/food_2.jpg" alt="dish" class="w-full h-full object-cover object-right">
+            </div>
         </div>
     </main>
 

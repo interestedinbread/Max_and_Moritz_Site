@@ -31,3 +31,52 @@
     font-weight: 700;
     font-style: normal;
   }
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-image {
+    position: relative;
+    will-change: transform;
+}
+
+.parallax-container-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-image-2 {
+    position: relative;
+    will-change: transform;
+}
+
+/* Header shrink effect */
+header {
+    transition: all 0.3s ease;
+}
+
+header.header-scrolled {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+header.header-scrolled h4 {
+    font-size: 3.5rem;
+    transition: all 0.3s ease;
+}
+
+header.header-scrolled img {
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .parallax-image {
+        transform: translateY(calc(var(--scroll-offset, 0) * 0.5));
+    }
+    .parallax-image-2 {
+        transform: translateY(calc(var(--scroll-offset, 0) * 0.5));
+    }
+}
