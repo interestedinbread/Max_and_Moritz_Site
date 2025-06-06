@@ -54,22 +54,30 @@
 
 /* Header shrink effect */
 header {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 header.header-scrolled {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    transform: scaleY(0.95);
+    transform-origin: top center;
+}
+
+header h4 {
+    transition: transform 0.3s ease;
 }
 
 header.header-scrolled h4 {
-    font-size: 3.5rem;
-    transition: all 0.3s ease;
+    transform: scale(0.95);
+    transform-origin: left center;
+}
+
+header img {
+    transition: transform 0.3s ease;
 }
 
 header.header-scrolled img {
-    height: 50px;
-    transition: all 0.3s ease;
+    transform: scale(0.95);
+    transform-origin: left center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
