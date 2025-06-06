@@ -1,15 +1,24 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Parallax effect
-    const parallaxImages = document.querySelectorAll('.parallax-image, .parallax-image-2');
+    const parallaxImage = document.querySelector('.parallax-image');
+    const parallaxImage2 = document.querySelector('.parallax-image-2');
     
     window.addEventListener('scroll', () => {
         const scrollPosition = window.pageYOffset;
         
-        // Update all parallax images
-        parallaxImages.forEach(image => {
-            image.style.setProperty('--scroll-offset', scrollPosition + 'px');
-        });
+        // First parallax image (top of page)
+        parallaxImage.style.setProperty('--scroll-offset', scrollPosition + 'px');
+
+        // Second parallax image (further down the page)
+        const rect2 = parallaxImage2.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        
+        // Only apply parallax effect when the image is in or near the viewport
+        if (rect2.top < viewportHeight && rect2.bottom > 0) {
+            const relativeScroll = scrollPosition - (rect2.top + window.scrollY);
+            parallaxImage2.style.setProperty('--scroll-offset', relativeScroll + 'px');
+        }
 
         // Header shrink effect
         const header = document.querySelector('header');
