@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bangers&family=Bebas+Neue&family=Caveat+Brush&family=IM+Fell+Double+Pica:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-100">
-    <header class="bg-white shadow-md py-4 sticky top-0 z-50 cursor-pointer">
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50 cursor-pointer lg:static">
         <div class="flex justify-center items-center">
             <h4 class="caveat-brush-regular text-6xl text-red-600 sm:text-7xl md:text-8xl lg:text-9xl xl:text-12xl">Max & Moritz</h4>
             <img src="img/max_and_moritz_cartoon.png" class="h-[60px] w-auto object-contain ml-3 sm:h-[70px] md:h-[80px] lg:h-[90px] xl:h-[120px]">
@@ -29,6 +30,73 @@
             <p class="text-white p-6 text-lg poppins-regular leading-relaxed lg:max-w-6xl lg:mx-auto lg:text-xl">Located at Sturdies Bay Galiano Island, Max and Moritz has been serving Indonesian and German style food to island locals and hungry visitors since 1994! 
                 All of our meals are cooked fresh to order with the best ingredients, including many that are sourced right here on Galiano. 
             </p>
+            <button id="hours-toggle-btn" class="text-white text-md poppins-regular pl-6 mb-4"><span class="underline text-amber-300">Check our business hours here</span> :)</button>
+            <div class="business-hours-container px-4 pb-4 hidden">
+                <div class="mon-tue-container flex">
+                    <div class="day-time-container p-4">
+                        <p class="text-white text-md poppins-bold">Sunday</p>
+                        <ul>
+                            <li class="text-white text-md poppins-regular">7:00am - 8:30am</li>
+                            <li class="text-white text-md poppins-regular">10:30am - 12:00pm</li>
+                            <li class="text-white text-md poppins-regular">3:00pm - 6:00pm</li>
+                        </ul>
+                    </div>
+                    <div class="day-time-container p-4">
+                        <p class="text-white text-md poppins-bold">Monday</p>
+                        <ul>
+                            <li class="text-white text-md poppins-regular">7:00am - 8:30am</li>
+                            <li class="text-white text-md poppins-regular">10:30am - 12:00pm</li>
+                            <li class="text-white text-md poppins-regular">3:00pm - 6:00pm</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="wed-thu-container flex">
+                    <div class="day-time-container p-4">
+                        <p class="text-white text-md poppins-bold">Tuesday</p>
+                        <ul>
+                            <li class="text-white text-md poppins-regular">7:00am - 8:30am</li>
+                            <li class="text-white text-md poppins-regular">10:30am - 12:00pm</li>
+                            <li class="text-white text-md poppins-regular">3:00pm - 6:00pm</li>
+                        </ul>
+                    </div>
+                    <div class="day-time-container p-4">
+                        <p class="text-white text-md poppins-bold">Wednesday</p>
+                        <ul>
+                            <li class="text-white text-md poppins-regular">7:00am - 8:30am</li>
+                            <li class="text-white text-md poppins-regular">10:30am - 12:00pm</li>
+                            <li class="text-white text-md poppins-regular">3:00pm - 6:00pm</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="fri-sat-container flex">
+                    <div class="day-time-container p-4">
+                        <p class="text-white text-md poppins-bold">Thursday</p>
+                        <ul>
+                            <li class="text-white text-md poppins-regular">7:00am - 8:30am</li>
+                            <li class="text-white text-md poppins-regular">11:00am - 12:30pm</li>
+                            <li class="text-white text-md poppins-regular">4:00pm - 6:30pm</li>
+                        </ul>
+                    </div>
+                    <div class="day-time-container p-4">
+                        <p class="text-white text-md poppins-bold">Friday</p>
+                        <ul>
+                            <li class="text-white text-md poppins-regular">7:00am - 8:30am</li>
+                            <li class="text-white text-md poppins-regular">11:00am - 12:30pm</li>
+                            <li class="text-white text-md poppins-regular">4:00pm - 6:30pm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="day-time-container p-4">
+                    <p class="text-white text-md poppins-bold">Saturday</p>
+                    <ul>
+                        <li class="text-white text-md poppins-regular">Closed</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
         </div>
         <div class="menu-container mb-12 lg:grid lg:grid-cols-2">
             <div class="menu-col-1">
@@ -204,9 +272,9 @@
         </div>
 
         <!-- Add something here about more meal information and encourage people to pick up some Lucy sauce -->
-        <div class="parallax-container-2 h-[750px] overflow-hidden relative md:h-[900px] lg:h-[1200px] lg:w-full xl:h-[1400px]">
-            <div class="parallax-image-2 absolute w-[150%] h-[750px] mt-[50px] md:h-[900px] md:mt-[100px] md:w-full lg:h-[1200px] lg:w-full xl:h-[1400px]">
-                <img src="img/shop_painting.jpg" alt="painting" class="w-full h-[900px] object-cover object-center lg:h-[1200px] lg:w-full xl:h-[1400px]">
+        <div class="parallax-container-2 h-[750px] overflow-hidden relative md:h-[900px] lg:h-[1200px] lg:w-full xl:h-[1500px]">
+            <div class="parallax-image-2 absolute w-[150%] h-[750px] mt-[50px] md:h-[900px] md:mt-[100px] md:w-full lg:h-[1200px] lg:w-full xl:h-[1500px]">
+                <img src="img/shop_painting.jpg" alt="painting" class="w-full h-[900px] object-cover object-center lg:h-[1200px] lg:w-full xl:h-[1500px]">
             </div>
         </div>
 
@@ -242,8 +310,17 @@
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-white mt-12">
-        
+    <footer class="bg-red-600">
+        <div class="p-4">
+            <p class="text-white text-md poppins-regular lg:max-w-6xl lg:mx-auto lg:text-xl">Max & Moritz</p>
+            <p class="text-white text-md poppins-regular lg:max-w-6xl lg:mx-auto lg:text-xl">Sturdies Bay, Galiano Island V0N 1P0</p>
+            <p class="text-white text-md poppins-regular lg:max-w-6xl lg:mx-auto lg:text-xl">Phone: 250-539-5888</p>
+            <p class="text-white text-md poppins-regular lg:max-w-6xl lg:mx-auto lg:text-xl">Email: maxandmoritz@live.com</p>
+        </div>
+        <div class="pl-4">
+            <i class="fa-brands fa-facebook-f text-amber-300 text-4xl"></i>
+            <i class="fa-brands fa-square-instagram text-amber-300 text-4xl pl-4 mb-6"></i>
+        </div>
     </footer>
 
     <script src="script.js"></script>

@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Parallax effect
     const parallaxImage = document.querySelector('.parallax-image');
     const parallaxImage2 = document.querySelector('.parallax-image-2');
+    const businessHoursContainer = document.querySelector('.business-hours-container');
+    const hoursToggleBtn = document.getElementById('hours-toggle-btn');
+
+    hoursToggleBtn.addEventListener('click', () => {
+        businessHoursContainer.classList.toggle('hidden');
+    });
     
     window.addEventListener('scroll', () => {
         const scrollPosition = window.pageYOffset;
