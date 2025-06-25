@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ (update sitemap url later)
+Sitemap: https://yourdomain.com/sitemap.xml
