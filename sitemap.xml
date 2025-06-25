@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
   <!-- add url in loc-->
-    <loc></loc> 
+    <loc>https://maxandmoritz.netlify.app/</loc> 
     <lastmod>2025-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
