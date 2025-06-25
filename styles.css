@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .caveat-brush-regular {
     font-family: "Caveat Brush", cursive;
     font-weight: 400;
